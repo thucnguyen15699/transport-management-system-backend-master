@@ -22,7 +22,7 @@
 	<developers>
 		<developer />
 	</developers>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<scm>
 		<connection />
 		<developerConnection />
