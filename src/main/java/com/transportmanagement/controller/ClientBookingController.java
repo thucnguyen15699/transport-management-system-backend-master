@@ -27,7 +27,13 @@ import io.swagger.v3.oas.annotations.Operation;
 
 @RestController
 @RequestMapping("/api/transport/client/")
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://http://171.228.167.35")
+@CrossOrigin(origins = {
+	    "http://localhost:3000",
+	    "http://171.228.167.35",
+	    "https://171.228.167.35"
+	})
 public class ClientBookingController {
 
 	@Autowired

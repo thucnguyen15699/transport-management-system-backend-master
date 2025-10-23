@@ -24,7 +24,11 @@ public class WebConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.addAllowedOrigin("http://localhost:3000");
+        config.setAllowedOriginPatterns(Arrays.asList(
+        	    "http://localhost:*",
+        	    "http://171.228.167.35",
+        	    "https://171.228.167.35"
+        	));
         config.setAllowedHeaders(Arrays.asList(
                 HttpHeaders.AUTHORIZATION,
                 HttpHeaders.CONTENT_TYPE,
