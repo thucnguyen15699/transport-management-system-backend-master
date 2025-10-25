@@ -41,7 +41,8 @@ import jakarta.servlet.http.HttpServletResponse;
 @CrossOrigin(origins = {
 	    "http://localhost:3000",
 	    "http://171.228.167.35",
-	    "https://171.228.167.35"
+	    "https://171.228.167.35",
+	    "https://hplogvp.io.vn"
 	})
 public class UserController {
 

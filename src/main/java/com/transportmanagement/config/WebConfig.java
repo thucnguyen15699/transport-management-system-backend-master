@@ -27,7 +27,8 @@ public class WebConfig {
         config.setAllowedOriginPatterns(Arrays.asList(
         	    "http://localhost:*",
         	    "http://171.228.167.35",
-        	    "https://171.228.167.35"
+        	    "https://171.228.167.35",
+        	    "https://hplogvp.io.vn"
         	));
         config.setAllowedHeaders(Arrays.asList(
                 HttpHeaders.AUTHORIZATION,
