@@ -44,11 +44,9 @@ public class ClientController {
 //		return clientResource.addClient(request);
 //	}
 	
-	@PostMapping("/add")
+	@PostMapping(value = "/add", consumes = "multipart/form-data")
 	@Operation(summary = "Api to add client")
-	public ResponseEntity<CommonApiResponse> addClient(
-	        @ModelAttribute ClientRequestDto request
-	) {
+	public ResponseEntity<CommonApiResponse> addClient(@ModelAttribute ClientRequestDto request) {
 	    return clientResource.addClient(request);
 	}
 
