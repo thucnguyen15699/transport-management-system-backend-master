@@ -72,6 +72,9 @@ public class ClientResource {
 
 			return new ResponseEntity<CommonApiResponse>(response, HttpStatus.BAD_REQUEST);
 		}
+		
+		System.out.println("=== Upload debug ===");
+		System.out.println("Upload file = " + (request.getUploadDocuments() == null ? "null" : request.getUploadDocuments().getOriginalFilename()));
 
 		String document = this.storageService.store(request.getUploadDocuments());
 
