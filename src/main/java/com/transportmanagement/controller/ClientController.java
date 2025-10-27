@@ -38,17 +38,17 @@ public class ClientController {
 	@Autowired
 	private ClientResource clientResource;
 
-//	@PostMapping("/add")
-//	@Operation(summary = "Api to add client")
-//	public ResponseEntity<CommonApiResponse> addClient(ClientRequestDto request) {
-//		return clientResource.addClient(request);
-//	}
-	
-	@PostMapping(value = "/add", consumes = "multipart/form-data")
+	@PostMapping("/add")
 	@Operation(summary = "Api to add client")
-	public ResponseEntity<CommonApiResponse> addClient(@ModelAttribute ClientRequestDto request) {
-	    return clientResource.addClient(request);
+	public ResponseEntity<CommonApiResponse> addClient(ClientRequestDto request) {
+		return clientResource.addClient(request);
 	}
+	
+//	@PostMapping(value = "/add", consumes = "multipart/form-data")
+//	@Operation(summary = "Api to add client")
+//	public ResponseEntity<CommonApiResponse> addClient(@ModelAttribute ClientRequestDto request) {
+//	    return clientResource.addClient(request);
+//	}
 
 	@PutMapping("/document/udpate")
 	@Operation(summary = "Api to update the client document!!!")
