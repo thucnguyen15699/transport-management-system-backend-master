@@ -28,6 +28,7 @@ public class WebConfig {
         	    "http://localhost:*",
         	    "http://171.228.167.35",
         	    "https://171.228.167.35",
+        	    "https://100.118.170.45",
         	    "https://hplogvp.io.vn",
         	    "https://www.hplogvp.io.vn"
         	));
